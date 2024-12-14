@@ -142,8 +142,8 @@ For the first part, let's add something like:
 updateLocation() {
     let speed = 1;
 
-    this.x += cos(this.angle - 90) + speed;
-    this.y += sin(this.angle - 90) + speed;
+    this.x += cos(this.angle - 90) * speed;
+    this.y += sin(this.angle - 90) * speed;
 
     this.x = constrain(this.x, 0, CANVAS_SIZE);
     this.y = constrain(this.y, 0, CANVAS_SIZE);
